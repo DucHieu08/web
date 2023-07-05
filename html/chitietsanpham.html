@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng bán Laptop - Nhóm 11</title>
+    <link rel="shortcut icon" type="text/css" href="../img/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/My-css.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/myJS.js"></script>
+    <link rel="stylesheet" href="../CSS/reset.css">
+	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/product-detail.css">
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+    <script>
+        function GetSL() {
+            var sl = document.getElementById('sel1').value;
+            document.getElementById('sl').innerHTML = sl;
+            var total = sl * 30490000;
+            document.getElementById('price').innerHTML = total;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+	<div class="row header">
+		<div class="col-xl-4 col-sm-12 logo">
+			<a href="index.html"><h3>Cửa Hàng Di động</h3></a>
+		</div>
+		<div class="col-xl-2 col-sm-12 search">
+			<form action="" onsubmit="">
+				<input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+				<button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+			</form>
+			
+		</div>
+		<div class="col-xl-6 col-sm-12">
+			<ul class="menu">
+				<li><a href="macbook1.html" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Macbook</a></li>
+				<li><a href="dell.html" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Dell</a></li>
+				<li><a href="phukien.html" class="sanpham" data-type="phukien"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
+				<li><a href="tintuc.html"><i class="far fa-newspaper" style="font-size: 21px;"></i>Tin tức</a></li>
+				<li><a href="gioithieu.html"><i class="fas fa-info"  style="font-size: 20px;"></i>Giới thiệu</a></li>
+			</ul>
+			<div class="btn-group user">
+				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					Xin chào
+				</button>
+				<ul class="dropdown-menu">
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+					<li class="item-giohang"><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
+    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<!-- end header -->
+
+    <section>
+        <div class="container">
+            <!-- nav -->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="index.html">Sản phẩm</a></li>
+				<li class="breadcrumb-item active" aria-current="page"></li>
+			</ol>
+		</nav>
+		<!-- end nav -->
+        <div class="row">
+            <div class="col-xl-9 col-sm-12">
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-lg-5 col-sm-5">
+                        <img src="../images/product/mac6.jpg" style="width: 100%; margin-bottom: 20px;">
+                    </div>
+                    <div class="col-lg-7 col-sm-7 general" >
+                        <div class="section-title">
+                            <h3 class="">Macbook Air 13" 2020 M1 16GB/256GB</h3>
+                            <p style="margin-bottom: 4px">Giá bán <span class="price"><span>30.490.000</span><sup>đ</sup></span></p>	
+                            <p style="margin-bottom: 4px">Bảo hành 1 đổi 1 trong 12 tháng ngày nếu có lỗi phần cứng</p>
+                        </div>
+                        <div class="d-flex">
+                            <p>Chọn số lượng: </p>
+                            <div class="form-group" style="margin:0px 20px">
+
+                                <select class="form-control" id="sel1" name="sellist1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <button type="button" id="DatMua" class="btn btn-warning"
+                                    style="height: 40px; width: 130px; ">
+                                    <p style="color: white; font-weight: bold;" onclick="GetSL()"> <img
+                                            src="../images/iconGioHang.png" style="width: 30px;height: 30px;">Mua Ngay</p>
+                            </button>
+                        </div>
+                        <div>
+                            <p>Chọn màu: </p>
+                            <div>
+                                <div class="section-color" data-color="Xanh dương">
+                                    <button class="btn btn-color" style="background-color: #1e73be"></button>
+                                </div>
+                                <div class="section-color" data-color="Xanh lá">
+                                    <button class="btn btn-color" style="background-color: #3fdb66"></button>
+                                </div>
+                                <div class="section-color" data-color="Đen">
+                                    <button class="btn btn-color" style="background-color: #3f3f3f"></button>
+                                </div>
+                                <div class="section-color" data-color="Trắng">
+                                    <button class="btn btn-color" style="background-color: #f2f2f2"></button>
+                                </div>
+                                <div class="section-color active" data-color="Đỏ">
+                                    <button class="btn btn-color" style="background-color: #e0004a"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-promotion">
+                                <div class="d-flex flex-column" style="margin:20px 10px">
+                                    <p><img src="../images/icondiachi.png" alt="" style="width: 20px; height: 20px;">
+                                        <b>Hà Nội: </b> 208D Lê Tấn, Q. Thanh Xuân - <a href="#">0915 841 888</a>
+                                    </p>
+                                    <p><img src="../images/icondiachi.png" alt="" style="width: 20px; height: 20px;">
+                                        <b>HCM: </b> 323 Trần Kiểu, Quận 6 - <a href="#">0915 841 777</a>
+                                    </p>
+                                    <p><img src="../images/icondiachi.png" alt="" style="width: 20px; height: 20px;">
+                                        <b>HCM: </b> 01 Ng Văn Bảo P6 G.Vấp - <a href="#">0915 841 666</a></p>
+                                    <p><img src="../images/icondiachi.png" alt="" style="width: 20px; height: 20px;">
+                                        <b>HCM: </b> 323 Hoàng Diệu, Quận 10 - <a href="#">0915 123 567</a></p>
+                                    <p><img src="../images/icondiachi.png" alt="" style="width: 20px; height: 20px;">
+                                        <b>Đ.Nẵng:</b> 323 Trần Văn Kiểu, Liên Chiểu - <a href="#">0915 841 999</a></p>
+                                </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal fade" id="myModalInfo">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-center">Nhập thông tin của bạn!</h4>
+                                    <button type="btn" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body" id="modalBody">
+                                    <input type="text" class="form-control mt-2" placeholder="Họ và tên" id="name" autocomplete="off">
+                                    <input type="text" class="form-control mt-2" placeholder="Địa chỉ giao hàng" id="ad"
+                                        autocomplete="off">
+                                    <input type="text" class="form-control mt-2" placeholder="Số điện thoại" id="phone"
+                                        autocomplete="off">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Tên sản phẩm</th>
+                                                <th>Số Lượng</th>
+                                                <th>Tổng Tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                
+                                            <tr>
+                                                <td>Macbook Air 13" 2020 M1 16GB/256GB</td>
+                                                <td><span id="sl"></span></td>
+                                                <td><span class="text-danger" id="price">0</span> <span class="text-danger">đ</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="btn" id="ok" class="btn btn-warning">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModalsp">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-center">Đặt mua sản phẩm thành công!</h4>
+                                    <button type="btn" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body" id="modalBody">
+                                    <img src="../images/product/mac6.jpg" alt="Anh" class="img-fluid d-block mx-auto" width="150px"
+                                        height="150px">
+                                    <h2 class="text-center">Macbook Air 13" 2020 M1 16GB/256GB</h2>
+                                    <h4 class="text-center">Cảm ơn bạn đã ủng hộ cửa hàng laptop của nhóm 11!</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="btn" class="close" data-dismiss="modal">Đóng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="sec-relate col-xl-3 col-sm-12">
+				<div class="relate">
+					<h4>Sản phẩm tương tự</h4>
+					<hr class="row" style="color: #908f8f; height: 2px;margin-bottom: 0;">
+					<div class="row">
+						<div class="col-lg-4">
+							<a href="../html/chitietsanpham.html">
+								<img src="../images/product/mac10.jpg">
+							</a>
+						</div>
+						
+						<div class="col-lg-8">
+							<h5><a href="../html/chitietsanpham.html">Laptop MacBook Air M1 2020 13 inch 256GB</a></h5>
+							<p>24.990.000<sup>đ</sup></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<a href="../html/chitietsanpham.html">
+								<img src="../images/product/mac10.jpg">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<h5><a href="../html/chitietsanpham.html">MacBook Air 13" 2020 M1 256GB</a></h5>
+							<p>25.490.000<sup>đ</sup></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<a href="../html/chitietsanpham.html">
+								<img src="../images/product/mac10.jpg">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<h5><a href="../html/chitietsanpham.html">Macbook Pro 13" 2020 Touch Bar M1 256GB</a></h5>
+							<p>31.450.000<sup>đ</sup></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+        </div>
+    </section>
+    <div class="container" style="background-color: white;">
+        <div class="jumbotron" style="background-color: white;">
+				<div class="row">
+					<ul class="nav nav-tabs" id="detail" role="detail-list">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" data-bs-toggle="tab" data-bs-target="#specifications" role="tab" aria-controls="specifications" aria-selected="true">Thông số kỹ thuật</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" data-bs-target="#highlights" role="tab" aria-controls="highlights" aria-selected="false">Đặc điểm nổi bật</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" data-bs-target="#product-review" role="tab" aria-controls="product-review" aria-selected="false">Đánh giá sản phẩm</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="detail-content">
+						<div class="tab-pane fade show active" id="specifications" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="detail-list" style="padding: 0; margin: 10px 0">
+								<li>
+									<h4 class="label-detal">Bộ xử lý</h4>
+									<table class="table">
+									    <tr>
+											<td>Hãng CPU</td>
+											<td>Apple</td>
+									    </tr>
+									    <tr>
+											<td>Công nghệ CPU</td>
+											<td>M1</td>
+									    </tr>
+									    <tr>
+									    	<td>Số nhân</td>
+											<td>8</td>
+									    </tr>
+									    <tr>
+									    	<td>Số luồng</td>
+											<td>8</td>
+									    </tr>
+									</table>
+								</li>
+								<li>
+									<h4 class="label-detal">RAM</h4>
+									<table class="table">
+									    <tr>
+											<td>Dung lượng RAM</td>
+											<td>8</td>
+									    </tr>
+									    <tr>
+											<td>Loại RAM</td>
+											<td>LPDDR4</td>
+									    </tr>
+									    <tr>
+									    	<td>Số khe cắm rời</td>
+											<td>0</td>
+									    </tr>
+									    <tr>
+									    	<td>Số khe RAM còn lại</td>
+											<td>0</td>
+									    </tr>
+                                        <tr>
+									    	<td>Số RAM onboard</td>
+											<td>1</td>
+									    </tr>
+                                        <tr>
+									    	<td>Hỗ trợ RAM tối đa</td>
+											<td>16GB</td>
+									    </tr>
+									</table>
+								</li>
+								<li>
+									<h4 class="label-detal">Màn hình</h4>
+									<table class="table">
+										<tr>
+											<td>Kích thước màn hình</td>
+											<td>13.3 inch</td>
+										</tr>
+										<tr>
+											<td>Công nghệ màn hình</td>
+											<td>IPS LCD LED Backlit, True Tone</td>
+										</tr>
+										<tr>
+									    	<td>Độ phân giải</td>
+											<td>2560 x 1600 Pixels</td>
+									    </tr>
+                                        <tr>
+									    	<td>Loại màn hình</td>
+											<td>LED</td>
+									    </tr>
+                                        <tr>
+									    	<td>Tấm nền	</td>
+											<td>IPS </td>
+									    </tr>
+                                        <tr>
+									    	<td>Độ phủ màu	</td>
+											<td>96% sRGB</td>
+									    </tr>
+                                        <tr>
+									    	<td>Tỷ lệ màn hình	</td>
+											<td>16:10</td>
+									    </tr>
+                                        <tr>
+									    	<td>Màn hình cảm ứng	</td>
+											<td>Không</td>
+									    </tr>
+								    </table>
+								</li>
+								
+
+								<li>
+									<h4 class="label-detal">Hệ điều hành & CPU</h4>
+									<table class="table">
+									    <tr>
+											<td>OS</td>
+											<td>macOS</td>
+									    </tr>
+									    <tr>
+											<td>Hãng CPU</td>
+											<td>Apple</td>
+									    </tr>
+									</table>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-pane fade" id="highlights" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="characteristics">
+								<h2 style="margin-bottom: 15px">Đánh giá chi tiết MacBook Air 13" 2020 M1 256GB</h2>
+                                <p>Chiếc MacBook Air có hiệu năng đột phá nhất từ trước đến nay đã xuất hiện. Bộ vi xử lý Apple M1 hoàn toàn mới đưa sức mạnh của MacBook Air M1 13 inch 2020 vượt xa khỏi mong đợi người dùng, có thể chạy được những tác vụ nặng và thời lượng pin đáng kinh ngạc.</p>
+								<h3>Sức mạnh chưa từng thấy trên dòng MacBook Air</h3>
+								<p>Lần đầu tiên Apple sử dụng con chip do chính mình sản xuất cho dòng máy Macbook. 
+                                Bộ vi xử lý Apple M1 với 16 tỉ bóng bán dẫn, bao gồm 8 nhân cực mạnh, trong đó có 4 
+                                nhân hiệu năng cao và 4 nhân tiết kiệm điện, mang đến cho MacBook Air M1 tốc độ xử lý 
+                                tuyệt vời, đồng thời kéo dài thời lượng pin. Nhờ vậy MacBook Air M1 2020 có hiệu suất
+                                nhanh gấp 3,5 lần thế hệ cũ, cho bạn làm việc với cả những công việc chuyên nghiệp, 
+                                những tác vụ nặng mà không thể chạy được trên MacBook Air trước đây.</p>
+                                <h3>Khả năng xử lý đồ họa đỉnh cao</h3>
+								<p>MacBook Air M1 13 inch 2020 có khả năng đồ họa khó tin trên một chiếc laptop siêu nhỏ gọn. GPU tích hợp trên Apple M1 có tới 8 nhân và là GPU tích hợp mạnh nhất thế giới laptop hiện nay. So với thế hệ trước, MacBook Air M1 2020 có khả năng xử lý đồ họa mạnh gấp 5 lần. Giờ đây ngay trên chiếc MacBook Air cực kỳ di động, bạn đã có thể xem và chỉnh sửa video 4K mượt mà, thậm chí là chơi game cũng như chạy các tác vụ đồ họa chuyên sâu.</p>
+                                <h3>Thời lượng pin tới 18 tiếng</h3>
+                                <p>MacBook Air trước đây đã được đánh giá cao về thời lượng pin, nhưng với MacBook Air M1 2020, bạn còn làm được nhiều điều hơn thế. Chiếc MacBook Air mới nhất có thể lướt web liên tục trong 15 tiếng và xem video liên tục trong 18 tiếng. Sẽ thật dễ dàng để bạn làm việc hay giải trí cả ngày mà không cần quan tâm đến nguồn điện với MacBook Air M1.</p>
+                                <h3>Hoạt động êm ái</h3>
+                                <p>Không cần đến quạt tản nhiệt, MacBook Air M1 2020 vẫn có thể tản nhiệt hiệu quả bởi một bộ tản nhiệt với những lá nhôm. Nhờ vậy, chiếc laptop của bạn có thể hoạt động êm ái, hoàn toàn yên tĩnh dù là trong đêm tối.</p>
+                                <h3>Tận hưởng hình ảnh đẹp tuyệt mỹ trên màn hình Retina</h3>
+                                <p>Trước mắt bạn là màn hình chuẩn Retina 13,3 inch, độ phân giải 2560 x 1600 pixels siêu nét của MacBook Air M1 2020. Tất cả đều hiển thị hoàn hảo, sắc nét, chân thực và màu sắc chính xác gần như tuyệt đối.</p>
+                                <p>Màn hình MacBook Air M1 hỗ trợ công nghệ True Tone và dải màu rộng P3 nhiều hơn tới 25% màu sắc so với chuẩn sRGB thông thường. Dù là giải trí hay làm đồ họa chuyên nghiệp, màn hình MacBook Air cũng cho bạn cái nhìn trung thực, chính xác và hấp dẫn nhất.</p>
+                                <h3>Tăng cường chất lượng gọi video</h3>
+                                <p>Cả âm thanh và hình ảnh trong các cuộc gọi FaceTime đều được cải thiện trên MacBook Air M1 2020. Con chip xử lý hình ảnh của Apple M1 giúp chất lượng hình ảnh tốt hơn bao giờ hết, rõ nét kể cả trong điều kiện thiếu sáng. Hệ thống 3 micro tập trung vào giọng nói của bạn, đàm thoại to, rõ ràng dù trong môi trường ồn ào.</p>
+                                <h3>Bàn phím Magic Keyboard, trải nghiệm gõ phím tốt nhất</h3>
+                                <p>Đúng như tên gọi, bàn phím Magic Keyboard của MacBook Air M1 13 inch 2022 quả là mang đến những điều kỳ diệu. Cơ chế bàn phím cắt kéo, các phím tắt hữu ích, biểu tượng cảm xúc tiện lợi và đèn nền có cảm biến ánh sáng, tất cả kết hợp lại tạo nên bàn phím laptop hoàn hảo bậc nhất hiện nay.</p>
+                                <h3>Cảm biến vân tay Touch ID một chạm</h3>
+                                <p>Không cần phải mất thời gian nhập mật khẩu, trên MacBook Air M1 2020, cảm biến vân tay Touch ID sẽ đăng nhập mọi thứ chỉ với một cú chạm. Mở khóa máy tính hay mở khóa tài liệu bảo mật, truy cập cài đặt hệ thống, bạn đều có thể sử dụng vân tay một cách nhanh chóng và an toàn.</p>
+                            </div>
+						</div>
+						<div class="tab-pane fade" id="product-review" role="tabpanel" aria-labelledby="contact-tab">
+							<h4>50 Đánh giá <span class="phone-name">iPhone 12 Mini 64GB (Hàng công ty VN/A)</span></h4>
+							<div class="row overview">
+								<div class="col-xl-2 col-sm-2" style="border-right: 1px solid #eee">
+									<h2>4.7 <i class="fas fa-star"></i></h2>
+								</div>
+								<div class="col-xl-5 col-sm-6" style="border-right: 1px solid #eee">
+									<ul>
+										<li>
+											5 <i class="fas fa-star"></i>
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 74%"></div>
+											</div>
+											<span class="count-review">37</span> đánh giá
+										</li>
+										<li>
+											4 <i class="fas fa-star"></i>
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 12%"></div>
+											</div>
+											<span class="count-review">6</span> đánh giá
+										</li>
+										<li>
+											3 <i class="fas fa-star"></i> 
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 6%"></div>
+											</div>
+											<span class="count-review">3</span> đánh giá
+										</li>
+										<li>
+											2 <i class="fas fa-star"></i> 
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 4%"></div>
+											</div>
+											<span class="count-review">2</span> đánh giá
+										</li>
+										<li>
+											1 <i class="fas fa-star"></i> 
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 4%"></div>
+											</div>
+											<span class="count-review">2</span> đánh giá
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-5 col-sm-4">
+									<div class="evaluate" style="padding-top: 25px;">
+										<div class="section-review">
+											<a class="btn-star star5" data-star="5"><i class="fas fa-star"></i></a>
+											<a class="btn-star star4" data-star="4"><i class="fas fa-star"></i></a>
+											<a class="btn-star star3" data-star="3"><i class="fas fa-star"></i></a>
+											<a class="btn-star star2" data-star="2"><i class="fas fa-star"></i></a>
+											<a class="btn-star star1" data-star="1"><i class="fas fa-star"></i></a>
+										</div>
+										<button class="btn btn-primary btn-vote" data-star="0">Gửi đánh giá</button>
+										
+										
+									</div>
+								</div>
+							</div>
+							<div class="row section-comment">
+								
+								
+								<div class="comment">
+									<h5>Nguyễn Trần Nhật</h5>
+									
+									<div class="star-vote" data-star="2">
+										<div class="section-review">
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+										</div>
+									</div>
+									<p>Ngon, xịn, mịn</p>
+									<div class="">
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">2 thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+										<p>2 tuần trước</p>
+									</div>
+								</div>
+
+								<div class="comment">
+									<h5>Huỳnh Giang</h5>
+									
+									<div class="star-vote" data-star="2">
+										<div class="section-review">
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+										</div>
+									</div>
+									<p>Xài rất ok rất mượt nhưng để qua đêm bị tụt vài phần trâm pin nhân viên chia sẽ nhiệt tình</p>
+									<div class="">
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+										<p>2 tuần trước</p>
+									</div>
+									<div class="reply">
+										<ul>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+
+								</div>
+								<div class="comment">
+									<h5>Hiếu</h5>
+									
+									<div class="star-vote" data-star="2">
+										<div class="section-review">
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+										</div>
+									</div>
+									<p>máy pin trâu nhân viên tư vấn nhiệt tình mình rất thích cách phục này cảm ơn !</p>
+									<div class="">
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+										<p>2 tuần trước</p>
+									</div>
+									<div class="reply">
+										<ul>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+
+								</div>
+								
+							</div>
+							<div class="add-comment">
+								<div>
+									<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+									<div>
+										<button class="btn btn-primary btn-comment">Gửi</button>
+									</div>
+								</div>
+							</div>							
+						</div>						
+					</div>
+				</div>				
+        </div>
+
+    </div>
+
+   <!-- footer -->
+   <div class="clearfix footer" style="min-height:300px;background-color: #292929; margin-top: 20px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<div class="logofooter">
+					<h3
+						style="color:white;; margin-top: 30px;text-transform: uppercase;font-family: Georgia, 'Times New Roman', Times, serif;">
+						<u id="au">About Us</u>
+					</h3>
+					<p style="margin-top: 20px; ">Welcome To <a href="../html/index.html"
+							class="text-decoration-none" style="color: #72d6ce;">Cửa hàng bán laptop</a></p>
+					<p>
+						Cửa hàng bán laptop N11 là thương hiệu thuộc Công ty Cổ phần Thế giới di động, Tên tiếng Anh là Mobile World JSC, là một tập đoàn bán lẻ tại Việt Nam với lĩnh vực kinh doanh chính là bán lẻ điện thoại di động, thiết bị số và điện tử tiêu dùng.
+
+					</p>
+				</div>
+			</div>
+			<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+				<div class="infor ">
+					<h5>Doanh mục</h5>
+					<a href="# ">Người dùng</a>
+					<a href="# ">Giới thiệu</a>
+					<a href="# ">Sản phẩm</a>
+					<a href="# ">Tin tức</a>
+					<a href="# ">Liên hệ</a>
+				</div>
+			</div>
+			<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+				<div class="infor ">
+					<h5>Dịch vụ</h5>
+					<a href="# "><i class="fas fa-shipping-fast "></i> Vận chuyển miễn phí</a>
+					<a href="# "><i class="fas fa-tools "></i> Đổi trả</a>
+					<a href="# "><i class="fas fa-handshake "></i> Chăm sóc khách hàng</a>
+				</div>
+			</div>
+			<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+				<div class="infor-bottom ">
+					<h5>Thông tin</h5>
+					<p><i class="fas fa-phone "></i> Holline:<a href=" "> 0354043344</a></p>
+					<p><i class="fas fa-phone "></i> Holline:<a href=" "> 0397530256</a></p>
+					<p><i class="fas fa-map-marker-alt "></i> Address: Ho Chi Minh City</p>
+					<p><i class="far fa-envelope "></i> Email: <a href="# ">trannhattdp1@gmail.com</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="sec-bottom " style="height: 50px;background-color:#363533; ">
+	<div class="container ">
+		<span>&copy;</span>
+		<span>Bản quyền thuộc về <span style="color:#ffc82e ">Nhóm 11 - DHCNTT16A</span></span>
+	</div>
+</div>
+	<!-- end footer -->
+
+
+</body>
+
+</html>

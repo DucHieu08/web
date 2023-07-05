@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="giày, dép, team13">
+	<meta name="description" content="cửa hàng bán laptop chất lượng.">
+	<meta name="author" content="nhóm 11">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cửa hàng bán Laptop - Nhóm 11</title>
+	<link rel="shortcut icon" type="text/css" href="../img/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/My-css.css">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/myJS.js"></script>
+	<link rel="stylesheet" href="../css/dangky.css">
+	<script src="../js/myJS.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<script>
+		function LoadDatainTable() {
+			var count = 1;
+			var name = document.getElementById('name').value;
+			var mail = document.getElementById('email').value;
+			var phone = document.getElementById('phone').value;
+
+			var tb = document.getElementById('tb');
+			var h = tb.insertRow(count);
+			count++;
+			var c0 = h.insertCell(0);
+			var c1 = h.insertCell(1);
+			var c2 = h.insertCell(2);
+
+			c0.innerHTML = name;
+			c1.innerHTML = mail;
+			c2.innerHTML = phone;
+		}
+
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<div class="row header">
+		<div class="col-xl-4 col-sm-12 logo">
+			<a href="index.html"><h3>Cửa Hàng Di động</h3></a>
+		</div>
+		<div class="col-xl-2 col-sm-12 search">
+			<form action="" onsubmit="">
+				<input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+				<button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+			</form>
+			
+		</div>
+		<div class="col-xl-6 col-sm-12">
+			<ul class="menu">
+				<li><a href="macbook1.html" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Macbook</a></li>
+				<li><a href="dell.html" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Dell</a></li>
+				<li><a href="phukien.html" class="sanpham" data-type="phukien"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
+				<li><a href="tintuc.html"><i class="far fa-newspaper" style="font-size: 21px;"></i>Tin tức</a></li>
+				<li><a href="gioithieu.html"><i class="fas fa-info"  style="font-size: 20px;"></i>Giới thiệu</a></li>
+			</ul>
+			<div class="btn-group user">
+				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					Xin chào
+				</button>
+				<ul class="dropdown-menu">
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+					<li class="item-giohang"><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
+    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- content -->
+	<div class="row main">
+		
+		<div class="container">
+			<div class="jumbotron">
+				<h3 class="mt-2 text-center text-warning">Đăng kí</h3>
+				<div class="row">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6">
+						<form class="form-group mt-2">
+							<input type="text" class="form-control mt-2" placeholder="Họ và tên" id="name"
+								autocomplete="off">
+							<input type="email" class="form-control mt-3" placeholder="Email" id="email" autocomplete="off">
+							<input type="password" class="form-control mt-3" placeholder="Mật khẩu" id="passWord"
+								autocomplete="off">
+							<input type="text" class="form-control mt-3" placeholder="Số điện thoại" id="phone"
+								autocomplete="off">
+							<p id="erroMess"></p>
+							<div class="d-flex" style="justify-content: center;">
+								<button type="button" id="btnDangKi" class="btn btn-success mt-2 "
+									onclick="LoadDatainTable()">Đăng
+									kí</button>
+	
+							</div>
+							<br>
+							<div class="d-flex" style="justify-content: center;">
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+									Xem Danh Sách Tài Khoản
+								</button>
+							</div>
+	
+						</form>
+					</div>
+					<div class="col-sm-3"></div>
+				</div>
+	
+				<!-- Modal chúc mưng đăng kí thành công -->
+				<div class="modal fade" id="myModalhp">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title text-center">Chào mừng thành viên mới</h4>
+								<button type="btn" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body text-center" id="modalBody">
+								<img src="../img/chucMung.gif" alt="Anh" class="img-fluid d-block mx-auto"
+									style="height: 300px;">
+								<h1 class="text-center">Xin chào!</h1>
+								<h2 id="tenTV" class="text-center" style="color: rgb(12, 76, 250);"></h2>
+								<h3 class="text-center">Email đăng kí của bạn: </h3>
+								<h3 id="mailTV" class="text-center" style="color: rgb(12, 76, 250);"></h3>
+							</div>
+							<div class="modal-footer">
+								<button id="btndong" type="btn" class="close" data-dismiss="modal">Đóng</button>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Modal hiển thị danh sách tài khoản đã đăng kí -->
+				<!-- The Modal -->
+				<div class="modal fade" id="myModal" style="width: 100%;">
+					<div class="modal-dialog">
+						<div class="modal-content">
+	
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">DANH SÁCH TÀI KHOẢN</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<!-- Modal body -->
+							<div class="modal-body">
+								<table class="table table-hover" id="tb">
+									<thead>
+										<tr>
+											<th>Họ và Tên</th>
+											<th>Email</th>
+											<th>Số điện thoại</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+							</div>
+	
+						</div>
+					</div>
+				</div>
+	
+	
+	
+			</div>
+	
+	
+		</div>
+	
+		
+
+	</div>
+	<!-- end content -->
+	<!-- footer -->
+	<div class="clearfix footer" style="min-height:300px;background-color: #292929; margin-top: 20px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3">
+					<div class="logofooter">
+						<h3
+							style="color:white;; margin-top: 30px;text-transform: uppercase;font-family: Georgia, 'Times New Roman', Times, serif;">
+							<u id="au">About Us</u>
+						</h3>
+						<p style="margin-top: 20px; ">Welcome To <a href="../html/index.html"
+								class="text-decoration-none" style="color: #72d6ce;">Cửa hàng bán laptop</a></p>
+						<p>
+							Cửa hàng bán laptop N11 là thương hiệu thuộc Công ty Cổ phần Thế giới di động, Tên tiếng Anh là Mobile World JSC, là một tập đoàn bán lẻ tại Việt Nam với lĩnh vực kinh doanh chính là bán lẻ điện thoại di động, thiết bị số và điện tử tiêu dùng.
+
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+					<div class="infor ">
+						<h5>Doanh mục</h5>
+						<a href="# ">Người dùng</a>
+						<a href="# ">Giới thiệu</a>
+						<a href="# ">Sản phẩm</a>
+						<a href="# ">Tin tức</a>
+						<a href="# ">Liên hệ</a>
+					</div>
+				</div>
+				<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+					<div class="infor ">
+						<h5>Dịch vụ</h5>
+						<a href="# "><i class="fas fa-shipping-fast "></i> Vận chuyển miễn phí</a>
+						<a href="# "><i class="fas fa-tools "></i> Đổi trả</a>
+						<a href="# "><i class="fas fa-handshake "></i> Chăm sóc khách hàng</a>
+					</div>
+				</div>
+				<div class="col-12 col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+					<div class="infor-bottom ">
+						<h5>Thông tin</h5>
+						<p><i class="fas fa-phone "></i> Holline:<a href=" "> 0354043344</a></p>
+						<p><i class="fas fa-phone "></i> Holline:<a href=" "> 0397530256</a></p>
+						<p><i class="fas fa-map-marker-alt "></i> Address: Ho Chi Minh City</p>
+						<p><i class="far fa-envelope "></i> Email: <a href="# ">trannhattdp1@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sec-bottom " style="height: 50px;background-color:#363533; ">
+		<div class="container ">
+			<span>&copy;</span>
+			<span>Bản quyền thuộc về <span style="color:#ffc82e ">Nhóm 11 - DHCNTT16A</span></span>
+		</div>
+	</div>
+	<!-- end footer -->
+</body>
+
+
+</html>

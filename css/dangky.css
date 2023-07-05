@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+form{
+    text-align: center;
+}
